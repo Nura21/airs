@@ -13,3 +13,18 @@ bun run dev
 ```
 
 Open http://localhost:3000/ with your browser to see the result.
+
+
+airs/
+├── src/
+│   ├── controllers/
+│   │   └── pollutionController.ts
+│   ├── models/
+│   │   └── pollutionModel.ts
+│   ├── routes/
+│   │   └── pollutionRoutes.ts
+│   ├── config/
+│   │   └── database.ts
+│   └── index.ts
+├── tsconfig.json
+└── package.json

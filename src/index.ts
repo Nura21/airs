@@ -1,7 +1,10 @@
-import { Elysia } from "elysia";
+// src/index.ts
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
+import { Elysia } from 'elysia';
+import pollutionRoutes from './routes/pollutionRoutes';
 
-console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
-);
+const app = new Elysia()
+  .use(pollutionRoutes)
+  .listen(3000);
+
+console.log('Server running on http://localhost:3000');
